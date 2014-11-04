@@ -129,9 +129,9 @@ Breaking up a more general profile that is shared across many components into sm
 
 
 Here are some examples of fragmentation:
-- tailoring the list of software installed for each server cluster in stead of installing the same list of software to all clusters
-- creating many fine-grained user access control lists in stead fewer, broader lists
-- creating a test environment based on the logical definition of the production environment, but removing software or configuration that is deemed to be production-only, like monitoring. 
+* tailoring the list of software installed for each server cluster in stead of installing the same list of software to all clusters
+* creating many fine-grained user access control lists in stead fewer, broader lists
+* creating a test environment based on the logical definition of the production environment, but removing software or configuration that is deemed to be production-only, like monitoring. 
 
 There is of course a balance to be struck between customising configuration to increase its' relevancy to individual components and generalised, install-everywhere configuration. Unless there is measurable reward for customisation, it is better to lean towards generalisation.
 
@@ -149,10 +149,10 @@ Here are some ghetto maths to summarise the recommendations in this article:
 This states that the (quantity of) complexity of a particular configuration domain is proportionally related to the number of distinct configuration profiles and operating environments.
 
 Where 
-  * D = a specific configuration domain e.g. all server images
-  * n = number of reproducible configuration profiles
-  * N = number of non-reproducible configuration profiles
-  * e = environment cardinality
+* D = a specific configuration domain e.g. all server images
+* n = number of reproducible configuration profiles
+* N = number of non-reproducible configuration profiles
+* e = environment cardinality
 
 
 Quantification is good to help us track changes, to objectively compare scenarios, and to create realistic projections. It can also be used as a consistent method to describe the scope of the support team's remit. Operations managers can use it as guide for managing team resources.
