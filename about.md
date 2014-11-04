@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself. 
+I was a programmer for 10 years before I ended up in a operational role - the infrastructure management of a online product with millions of users. Countless of late night pages later I'm ready to share the lessons I've learned.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[edwiny4096@gmail.com](mailto:edwiny4096@gmail.com)
