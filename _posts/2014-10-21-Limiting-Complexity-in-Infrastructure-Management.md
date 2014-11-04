@@ -117,7 +117,7 @@ Each of the operational patterns described earlier are in their own ways just va
 
 When a system component is not easily reproducible, not only do repetitions of it add to the overall support costs, but it also increases the overall complexity of a system - seemingly in such a way where complexity begets more complexity.
 
-Standardisation yields efficiency.  When a system component is non-reproducible,  it is likely to be non-standard. Risk of failure will stifle change to the system; when standards in the organisation move on, this component is left behind. What's more, dependencies on this component are likely to be poorly understood, testing environment for the component is probably of low quality or non-existent, and specialised skills are required to support it. This results in a high support cost for the component, but this cost often remains hidden to the operations manager who ends up under-staffing the team. Overcommitted support engineers make mistakes and take shortcuts which lead to fragmentation (see section below.) 
+Standardisation yields efficiency.  When a system component is non-reproducible,  it is likely to be non-standard. Risk of failure will stifle change to the system; when standards in the organisation move on, this component is left behind. What's more, dependencies on this component are likely to be poorly understood, testing environment for the component is probably of low quality or non-existent, and specialised skills are required to support it. This results in a high support cost for the component, but this cost often remains hidden to the operations manager who ends up under-staffing the team. Overcommitted support engineers make mistakes and take shortcuts which lead to fragmentation.
 
 
 
