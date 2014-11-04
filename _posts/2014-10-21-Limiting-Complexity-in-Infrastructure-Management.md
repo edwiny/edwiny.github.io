@@ -139,26 +139,7 @@ There is of course a balance to be struck between customising configuration to i
 Here is a another example of fragmentation occurring: suppose you support a product the infrastructure of which is mirrored across different hosting locations. The product expands functionality and infrastructure is provisioned in the primary serving location for a new backend component. However, due to time or budget constraints, the additional infrastructure is not provisioned in the fail over location. A decision is made to co-host the new component on the infrastructure of a existing component. This amalgamated component breaks configuration parity with the primary location, and fragments the system configuration into two distinct profiles.
 
 
-There is a subtle form of fragmentation that deserves special mention - when changes are made to a deployed instance of a configuration profile, but not back-factored into the logical definition, for example when a change is made to a production server without updating the image definition. Now the logical definition cannot be synced to the production server without overwriting the manual changes. Until the changes can be factored into the logical definition, and any changes that may have accumulated in the logical definition pushed to the changed deployed instance, the changed deployed instance essentially forms a additional, distinct configuration profile.
-
-## Quantification
-
-Here are some ghetto maths to summarise the recommendations in this article:
-
-> Complexity(D) = e . (n + log N)
-
-This states that the (quantity of) complexity of a particular configuration domain is proportionally related to the number of distinct configuration profiles and operating environments.
-
-Where:
-
-- D = a specific configuration domain e.g. all server images
-- n = number of reproducible configuration profiles
-- N = number of non-reproducible configuration profiles
-- e = environment cardinality
-
-
-Quantification is good to help us track changes, to objectively compare scenarios, and to create realistic projections. It can also be used as a consistent method to describe the scope of the support team's remit. Operations managers can use it as guide for managing team resources.
-
+A more subtle form of fragmentation occurs when changes are made to a deployed instance of a configuration profile, but not back-factored into the logical definition, for example when a change is made to a production server without updating the image definition. Now the logical definition cannot be synced to the production server without overwriting the manual changes. Until the changes can be factored into the logical definition, and any changes that may have accumulated in the logical definition pushed to the changed deployed instance, the changed deployed instance essentially forms a additional, distinct configuration profile.
 
 
 ## Conclusion
