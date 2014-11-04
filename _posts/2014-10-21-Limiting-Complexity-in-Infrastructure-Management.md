@@ -17,7 +17,7 @@ You see, it was the complexity of it all that got me. Vast, messy, scary complex
 
 There are processes, undocumented and costly with prerequisites unknowable, servers of varying configurations in different networks that cannot talk to each other, software in dependency hell, tools that developers build on that old desktop PC under their desk that provides some critical data used for a executive report, firewall rules that you could not know about until it blocks that oh-so-important product launch, DNS records that must be updated with infrastructure changes, non-reproducible legacy systems with no engineering ownership that supply business-critical utility, out-of-date testing environments with configuration subtlety different from each other or from production, databases that require downtime to change, passwords that are forgotten or laughably easy to guess, critical security vulnerabilities that need to be patched, access control lists that continuously have to be updated and for which you get endless petitions for so-and-so to be added to, hundreds of services that need to be monitored, thousands of monitoring alerts, a endless procession of end-of-life software migrations.
 
-After I've been struggling with them for some time, I one day caught up with a friend and his wife at a social gathering. He was an IT manager at a firm in the manufacturing industry. We were swapping war stories when he asked me how many servers I manage. I said around 800 with a team of three people. His wife exclaimed to him, "Wow, and you have only 30 servers but twice as many people!" I felt embarrassed for him but that did not stop me from enjoying the moment. 
+After I've been struggling with this for some time, I one day caught up with a friend and his wife at a social gathering. He was an IT manager at a firm in the manufacturing industry. We were swapping war stories when he asked me how many servers I manage. I said around 800 with a team of three people. His wife exclaimed to him, "Wow, and you have only 30 servers but twice as many people!" I felt embarrassed for him but that did not stop me from enjoying the moment. 
 
 I could have explained to my friend's wife that, even though 800 servers seem like a lot, most of those servers were completely identical to each other, and that I had the most wonderful tools at my disposal to easily configure a new server based off a existing configuration. Overall, there may have only been around 15 distinct configuration profiles, so in a way, I only had 15 - logical - servers to maintain.
 
@@ -129,9 +129,9 @@ Breaking up a more general profile that is shared across many components into sm
 
 
 Here are some examples of fragmentation:
-* tailoring the list of software installed for each server cluster in stead of installing the same list of software to all clusters
-* creating many fine-grained user access control lists in stead fewer, broader lists
-* creating a test environment based on the logical definition of the production environment, but removing software or configuration that is deemed to be production-only, like monitoring. 
+- tailoring the list of software installed for each server cluster in stead of installing the same list of software to all clusters
+- creating many fine-grained user access control lists in stead fewer, broader lists
+- creating a test environment based on the logical definition of the production environment, but removing software or configuration that is deemed to be production-only, like monitoring. 
 
 There is of course a balance to be struck between customising configuration to increase its' relevancy to individual components and generalised, install-everywhere configuration. Unless there is measurable reward for customisation, it is better to lean towards generalisation.
 
@@ -149,10 +149,10 @@ Here are some ghetto maths to summarise the recommendations in this article:
 This states that the (quantity of) complexity of a particular configuration domain is proportionally related to the number of distinct configuration profiles and operating environments.
 
 Where 
-* D = a specific configuration domain e.g. all server images
-* n = number of reproducible configuration profiles
-* N = number of non-reproducible configuration profiles
-* e = environment cardinality
+- D = a specific configuration domain e.g. all server images
+- n = number of reproducible configuration profiles
+- N = number of non-reproducible configuration profiles
+- e = environment cardinality
 
 
 Quantification is good to help us track changes, to objectively compare scenarios, and to create realistic projections. It can also be used as a consistent method to describe the scope of the support team's remit. Operations managers can use it as guide for managing team resources.
