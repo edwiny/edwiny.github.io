@@ -3,6 +3,8 @@ layout: post
 title: Limiting Complexity in Infrastructure Management
 ---
 
+![The Self Operating Napkin]({{ site.url }}/images/Professor_Lucifer_Butts.gif)
+
 _This is going to be easy_, was my first thought when I took over the infrastructure management responsibilities for a Internet destination with millions of users. I had been a programmer up to that point and sure of myself that operations type work is less challenging than coding.
 
 Sure. 
